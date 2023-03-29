@@ -1,0 +1,41 @@
+img {
+  width: 17%;
+}
+table {
+  width: 70%;
+  margin: auto;
+}
+td {
+  width: 80%;
+  height: 100px;
+}
+
+.imgP {
+  text-align: center;
+}
+td.btn {
+  display: flex;
+  align-items: center;
+}
+button.remove {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: red;
+}
+a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+button.order {
+  border-radius: 40px;
+  background-color: transparent;
+  &:hover {
+    color: #fe981b;
+    border: 2px solid #fe981b;
+  }
+  margin-bottom: 250px;
+}

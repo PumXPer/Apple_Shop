@@ -1,0 +1,26 @@
+<div class="container">
+  <div>
+    <img src="{{ data.image }}" alt="" />
+  </div>
+  <table>
+    <tr>
+      <td>Name</td>
+      <td>{{ data.name }}</td>
+    </tr>
+    <tr>
+      <td>Price</td>
+      <td>{{ data.price }}</td>
+    </tr>
+    <tr>
+      <td>Color</td>
+      <td>{{ data.color }}</td>
+    </tr>
+    <tr>
+      <td>Category</td>
+      <td>{{ data.category }}</td>
+    </tr>
+  </table>
+</div>
+<button (click)="addToCart(data)">
+  <span class="material-symbols-outlined"> add_shopping_cart </span>
+</button>

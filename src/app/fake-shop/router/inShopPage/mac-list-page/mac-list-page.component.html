@@ -1,0 +1,11 @@
+<fake-shop-mac-list
+  *ngIf="data$ | async as data; else loading"
+  [data]="data"
+  (itemSelected)="onItemSelect($event)"
+  (searchChange)="search($event)"
+></fake-shop-mac-list>
+<ng-template #loading>
+  <div class="warp">
+    <span class="loader"></span>
+  </div>
+</ng-template>

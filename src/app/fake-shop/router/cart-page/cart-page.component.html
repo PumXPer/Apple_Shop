@@ -1,0 +1,30 @@
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th class="thP">Product</th>
+      <th>Name</th>
+      <th>Color</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of cartItems; let i = index">
+      <td class="imgP"><img src="{{ item.image }}" alt="" /></td>
+      <td>{{ item.name }}</td>
+      <td>{{ item.color }}</td>
+      <td>{{ item.price | currency }}</td>
+      <!-- <input type="number" value="{{ item.qty }}" /> 
+      -->
+      <td>{{ item.qty }}</td>
+      <td class="btn">
+        <button (click)="removeItem(i)" class="remove">
+          <span class="material-symbols-outlined"> delete </span>
+        </button>
+      </td>
+    </tr>
+    <p>Total price: {{ getTotalPrice() | currency }}</p>
+  </tbody>
+</table>
+<a routerLink="/shop/form"><button class="order">Order Now!</button></a>

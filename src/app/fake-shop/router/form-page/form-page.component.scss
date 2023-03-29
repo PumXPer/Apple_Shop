@@ -1,0 +1,70 @@
+main {
+  width: 60%;
+  margin: auto;
+}
+
+table {
+  margin: auto;
+  width: 100%;
+}
+button {
+  border-radius: 40px;
+  background-color: transparent;
+  &:hover {
+    color: #fe981b;
+    border: 2px solid #fe981b;
+  }
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+}
+h2 {
+  margin-top: 30px;
+}
+input[type='text'],
+select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type='tel'],
+select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type='email'],
+select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+textarea,
+select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.form-row {
+  display: flex;
+  justify-content: space-between;
+}

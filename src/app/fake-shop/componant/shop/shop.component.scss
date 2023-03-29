@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.head {
+  background-image: url('https://www.macthai.com/wp-content/uploads/2021/01/Apple-Products.jpg');
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+
+.categories1 {
+  background-image: url('https://www.apple.com/newsroom/images/product/iphone/standard/Apple_iphone_11-rosette-family-lineup-091019_big.jpg.large.jpg');
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+a {
+  margin: auto;
+  border: 2px solid #000;
+  padding: 15px 50px;
+  border-radius: 20px;
+  &:hover {
+    color: #fe981b;
+    border: 2px solid #fe981b;
+  }
+}
+
+.categories2 {
+  background-image: url('https://www.apple.com/newsroom/images/product/ipad/standard/Apple-iPad-10th-gen-hero-221018.jpg.landing-big_2x.jpg');
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.categories3 {
+  background-image: url('https://www.apple.com/newsroom/images/product/mac/standard/Apple_next-generation-mac-macbookair-macbookpro-mac-mini_11102020_Full-Bleed-Image.jpg.large.jpg');
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+a {
+  margin: auto;
+}
+.text-head {
+  color: #000;
+  font-size: 30px;
+  text-align: center;
+}
+
+.categories {
+  width: 100%;
+  height: 100vh;
+}
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.section_grid_item {
+  font-size: 30px;
+  text-align: center;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06);
+  &:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+}
+
+.section_item_img {
+  width: 5%;
+}
+img {
+  width: 250px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}

@@ -1,0 +1,19 @@
+<form [formGroup]="myForm" (ngSubmit)="doSearch()" class="search">
+  <input #inputEl type="text" formControlName="search" placeholder="Search" />
+  <button type="submit" class="searchTerm">
+    <span class="material-symbols-outlined"> search </span>
+  </button>
+</form>
+<div class="container">
+  <div
+    *ngFor="let item of data"
+    class="area"
+    (click)="select(item)"
+    (keydown.enter)="select(item)"
+  >
+    <img src="{{ item.image }}" alt="" />
+    <div class="text-item">
+      <p>{{ item.name }},{{ item.color }}</p>
+    </div>
+  </div>
+</div>
